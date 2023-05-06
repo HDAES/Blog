@@ -28,7 +28,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: hdaes/hdaes.github.io #可以新建一个mybells.github.io仓库发布到master
+          external_repository: hdaes/hdaes.github.io 
           publish_branch: main
-          publish_dir: docs/.vuepress/dist
+          publish_dir: docs/.vitepress/dist
           allow_empty_commit: false
