@@ -24,10 +24,11 @@ jobs:
       - run: npm ci
       - name: Build
         run: npm run docs:build
-      - uses: actions/configure-pages@v2
-      - uses: actions/upload-pages-artifact@v1
+      - name: Deploy hdaes.github.io/main
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: docs/.vitepress/dist
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v1
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          external_repository: hdaes/hdaes.github.io #可以新建一个mybells.github.io仓库发布到master
+          publish_branch: main
+          publish_dir: docs/.vuepress/dist
+          allow_empty_commit: false
