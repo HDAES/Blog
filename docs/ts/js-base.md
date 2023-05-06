@@ -1055,7 +1055,7 @@ Map.prototype.has()
 
 方法has() 返回一个bool值，用来表明map 中是否存在指定元素.
 
-```javas
+```javascript
 var myMap = new Map();
 myMap.set("bar", "foo");
 
