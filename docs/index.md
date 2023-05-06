@@ -9,13 +9,11 @@ hero:
   actions:
     - theme: brand
       text: 前端物语
-      link: /markdown-examples
+      link: /ts/types
     - theme: alt
       text: 前端导航
       link: /nav/
-    - theme: brand
-      text: 提效工具
-      link: /markdown-examples
+    
   image:
     src: /logo.png
     alt: VitePress
