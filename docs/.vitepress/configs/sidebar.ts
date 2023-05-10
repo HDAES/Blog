@@ -19,7 +19,8 @@ function frontEnd(){
             text: 'TypeScript',
             collapsed: false,
             items: [
-                { text: 'TypeScript 装饰器', link: '/frontEnd-story/ts/ts-decorator' },
+                { text: '装饰器', link: '/frontEnd-story/ts/ts-decorator' },
+                { text: '抽象类和抽象方法', link: '/frontEnd-story/ts/ts-abstract' },
             ]
         },
         {
