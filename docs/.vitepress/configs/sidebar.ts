@@ -1,50 +1,52 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
-    '/ts/': sidebarTs(),
-    '/daily-notes/':  sidebarDailyNotes()
+    '/frontEnd-story/': frontEnd(),
+    '/daily-notes/':  sidebarDailyNotes(),
 }
 
-
-function sidebarTs() {
+function frontEnd(){
     return [
         {
-            text: 'JavaScript',
+            text: '前端基础',
             collapsed: false,
             items: [
-                { text: 'JavaScript基础', link: '/ts/js-base' },
-                { text: 'HTML/CSS', link: '/ts/html-css' },
+                { text: 'JavaScript基础', link: '/frontEnd-story/web/js-base' },
+                { text: 'HTML/CSS', link: '/frontEnd-story/web/html-css' },
             ]
         },
         {
             text: 'TypeScript',
             collapsed: false,
             items: [
-                { text: 'TypeScript 装饰器', link: '/ts/ts-decorator' },
+                { text: 'TypeScript 装饰器', link: '/frontEnd-story/ts/ts-decorator' },
             ]
         },
         {
-            text: 'HTML/CSS',
+            text: 'WebGL',
             collapsed: false,
-            items: []
+            items: [
+                { text: 'Threejs', link: '/frontEnd-story/webgl/threejs' },
+            ]
         },
         {
             text: '常用库使用技巧',
             collapsed: false,
             items: [
-                { text: 'Knex基本用法', link: '/ts/knex' },
-                { text: 'Pinia基本用法', link: '/ts/pinia' },
+                { text: 'Knex基本用法', link: '/frontEnd-story/npm/knex' },
+                { text: 'Pinia基本用法', link: '/frontEnd-story/npm/pinia' },
             ]
         },
         {
             text: '自动化',
             collapsed: false,
             items: [
-                { text: 'Github Actions', link: '/ts/github-actions' },
+                { text: 'Github Actions', link: '/frontEnd-story/auto/github-actions' },
             ]
         },
     ]
 }
+
 
 function sidebarDailyNotes(){
     return [

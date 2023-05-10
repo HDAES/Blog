@@ -5,8 +5,8 @@ export const nav: DefaultTheme.Config['nav'] = [
     {
         text: '前端物语',
         items: [
-            { text: 'JavaScript基础', link: '/ts/js-base' },
-            { text: 'HTML/CSS', link: '/ts/html-css' },
+            { text: 'JavaScript基础', link: '/frontEnd-story/web/js-base' },
+            { text: '自动化', link: '/frontEnd-story/auto/github-actions' },
         ]
     },
     {
