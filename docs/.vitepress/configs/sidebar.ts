@@ -28,6 +28,7 @@ function frontEnd(){
             collapsed: false,
             items: [
                 { text: 'Threejs', link: '/frontEnd-story/webgl/threejs' },
+                { text: 'Threejs常用组件', link: '/frontEnd-story/webgl/threejs-common-components' },
             ]
         },
         {
