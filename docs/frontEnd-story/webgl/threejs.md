@@ -115,3 +115,8 @@ if (WebGL.isWebGLAvailable()) {
 ```
 
 ## 4.[文档地址](https://threejs.org/docs/)
+
+
+## 5.[演示地址](https://stackblitz.com/edit/vitejs-vite-tmjde4?file=README.md)
+<iframe id="iframe" width="100%" height="300" allowfullscreen="true" src="https://stackblitz.com/edit/vitejs-vite-tmjde4?file=README.md">  
+ </iframe>

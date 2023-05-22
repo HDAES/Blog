@@ -71,4 +71,3 @@ gui.add( obj, 'myString' ); 	// text field
 gui.add( obj, 'myNumber' ); 	// number field
 gui.add( obj, 'myFunction' ); 	// button
 ```
-
