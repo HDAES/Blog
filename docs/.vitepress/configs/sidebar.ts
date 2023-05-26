@@ -29,6 +29,7 @@ function frontEnd(){
             items: [
                 { text: 'Threejs', link: '/frontEnd-story/webgl/threejs' },
                 { text: 'Threejs常用组件', link: '/frontEnd-story/webgl/threejs-common-components' },
+                { text: 'Threejs实现物体在传送带移动',link: '/frontEnd-story/webgl/threejs-conveyor-belt'}
             ]
         },
         {

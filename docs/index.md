@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 前端物语
-      link: /ts/js-base
+      link: /frontEnd-story/web/js-base
     - theme: alt
       text: 前端导航
       link: /nav/
