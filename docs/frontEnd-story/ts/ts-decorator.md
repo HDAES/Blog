@@ -5,7 +5,7 @@
 ## 介绍
 随着TypeScript和ES6中类的引入，现在存在某些场景需要额外的功能来支持注释或修改类和类成员。装饰器提供了一种为类声明和成员添加注释和元编程语法的方法。装饰器是JavaScript的第二阶段建议，并作为TypeScript的一个实验性功能提供。
 ## 如何开启
-```
+```javascript
 修改tsconfig.json文件
 {
     "compilerOptions": {
@@ -23,7 +23,7 @@ tsc --target ES5 --experimentalDecorators
 
 如果类装饰器返回一个值，它将用提供的构造函数替换类声明。
 
-```
+```typescript
 const moveDecoate: ClassDecorator = (target: Function) => {
   console.log(target === Tank); // true  target为原型对象
 
@@ -58,7 +58,7 @@ console.log((p as any).getPosition()); // { x: 100, y: 100 }
 console.log((p as any).playMusci()); // 播放音乐
 ```
 ## 装饰器工厂（Class Decorator Factory）
-```
+```typescript
 const colorDecorateFactory = (type?: string): ClassDecorator => {
   return (target: Function) => {
     switch (type) {
@@ -97,7 +97,7 @@ console.log((train as any).color); // red
 1. 对于静态成员，可以是类的构造函数，对于实例成员，可以是类的原型。
 2. 成员的名字。
 
-```
+```typescript
 const propertyDecorator: PropertyDecorator = (target: Object, propertyKey: string | symbol) => {
   console.log(target, target === Xx.prototype); // {}   true  普通属性 为构造函数原型
   console.log(propertyKey); // name   属性名称
@@ -118,7 +118,7 @@ class Xx {
 ## 方法装饰器（Method Decorators）
 方法装饰器就在方法声明之前被声明。该装饰器被应用于方法的属性描述符，可以用来观察、修改或替换方法定义。一个方法装饰器不能在声明文件中使用，不能在重载上使用，也不能在任何其他的环境中使用（比如在声明类中）。
 
-```
+```typescript
 const showDecorator: MethodDecorator = (target: Object, propertyKey: string | symbol, descriptor: PropertyDescriptor) => {
   console.log(target, target === User.prototype); //{}  公共方法返回构造函数原型  target === User
   console.log(propertyKey); //show  函数的名字
@@ -160,7 +160,7 @@ new User().show(); //writable show
 ## 参数装饰器（Parameter Decorators）
 参数装饰器就在参数声明之前被声明。参数装饰器被应用于类构造器或方法声明的函数。一个参数装饰器不能在声明文件、重载或任何其他环境中使用（比如在声明类中）。
 
-```
+```typescript
 const parameterDecorator: ParameterDecorator = (target: Object, propertyKey: string | symbol, parameterIndex: number) => {
   console.log(target, target === Tk.prototype); //{} true
   console.log(propertyKey); // show

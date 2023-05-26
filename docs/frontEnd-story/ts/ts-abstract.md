@@ -8,7 +8,7 @@
 ## 抽象类，属性，方法
 加`abstract`关键就成抽象类
 
-```
+```typescript
 abstract class People {
   /**
    * 移动
@@ -34,7 +34,7 @@ new People()  //无法创建抽象类的实例
 
 ## 抽象类使用方法
 通过类的继承并实现抽象方法和属性
-```
+```typescript
 abstract class People {
   /**
    * 移动
