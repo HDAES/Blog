@@ -12,7 +12,6 @@ function frontEnd(){
             collapsed: false,
             items: [
                 { text: 'JavaScript基础', link: '/frontEnd-story/web/js-base' },
-                { text: 'HTML/CSS', link: '/frontEnd-story/web/html-css' },
                 { text: 'CSS-filter', link: '/frontEnd-story/web/css-filter' },
 
             ]
