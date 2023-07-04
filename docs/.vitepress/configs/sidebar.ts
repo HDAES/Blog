@@ -22,6 +22,7 @@ function frontEnd(){
             items: [
                 { text: '装饰器', link: '/frontEnd-story/ts/ts-decorator' },
                 { text: '抽象类和抽象方法', link: '/frontEnd-story/ts/ts-abstract' },
+                { text: 'class-transformer', link: '/frontEnd-story/ts/ts-class-transformer' },
             ]
         },
         {
