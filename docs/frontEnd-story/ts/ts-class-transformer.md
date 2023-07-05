@@ -190,3 +190,88 @@ export interface ClassTransformOptions {
 
 ```
 
+### 4.3 `plainToClassFromExist`
+
+这个方法使用一个已经填充好的目标类的实例的Object，将一个普通的对象转化为一个实例。
+
+```typescript
+const defaultUser  = new User()
+defaultUser.age = 12
+plainToClassFromExist(defaultUser, user)
+```
+
+### 4.4 `classToPlain`已废弃
+
+这个方法将你的类对象转换为普通的javascript对象,以后可以用JSON.stringify
+
+```typescript
+classToPlain(user)
+```
+
+### 4.5 `instanceToInstance`
+
+这个方法将你的类对象转化为一个新的类对象的实例。这可以被视为你的对象的深度克隆。
+
+```typescript
+instanceToInstance(user)
+```
+
+### 4.6 `instanceToPlain`
+
+转换为普通的JSON对象
+
+## 5. `Expose` `Exclude` `Type` 用法
+
+```typescript
+import { plainToInstance,Expose,Exclude,Type,Transform } from 'class-transformer';
+import  moment from 'moment';
+import { Moment } from 'moment';
+class Photo {}
+
+class Car {
+    
+    @Exclude()
+    color!: string
+    
+    height!: number
+
+    @Expose()
+    wight!: number
+    
+    @Type(() =>Photo)
+    photo!: Photo
+    
+    @Expose({groups: ['admin']})
+    key!: string
+    
+    @Expose({ since: 0.7, until: 1 })
+    email!: string;
+
+ 	@Type(() => Date)
+    @Expose()
+    @Transform(({ value }) => moment(value), { toClassOnly: true })
+    date!: Moment;
+}
+
+const mzd  = {
+    color: 'red',
+    height: 150,
+    wight: 50,
+    photo: {},
+    key: '12312',
+    email: '126@126.com',
+    date: '2023-07-05 12:00:00'
+}
+plainToInstance(Car, mzd, {version: 0.5})  
+//Car { 
+// color: undefined,  height: 150, wight: 50, photos: Photo {} , key: undefined, email: undefined, date: Moment<2023-07-05T12:00:00+08:00>
+//}
+plainToInstance(Car, mzd,{ excludeExtraneousValues: true ,groups: ['admin'], version: 0.8}) 
+//Car { 
+//color: undefined,  height: undefined, wight: 50, photos: Photo {},key: '12312',email: '126@126.com' , date: Moment<2023-07-05T12:00:00+08:00> 
+//}
+
+
+
+```
+
