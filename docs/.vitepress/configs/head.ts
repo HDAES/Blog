@@ -8,10 +8,11 @@ export const head: HeadConfig[] = [
   ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#3eaf7c' }],
   ['meta', { name: 'msapplication-TileImage', content: '/favicon.ico' }],
   ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+  ['meta', { name: 'google-adsense-account', content: 'ca-pub-8013111764282575' }],
   [
     'script',
     {
-      async: 'true',
+      async: '',
       src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8013111764282575',
       crossorigin: 'anonymous',
     },
