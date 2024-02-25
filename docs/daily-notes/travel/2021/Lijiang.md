@@ -6,6 +6,8 @@
 - 地点：云南丽江
 - 人物：饭饭 & _me_
 - 方式：坐 ✈️，游玩三天，特种兵旅游
+- 等级：AAAAA
+- 推荐：强烈推荐
 
 ## 第一天
 
@@ -15,6 +17,7 @@
 4. 回民宿 😴😴😴😴
 
 ![](https://hades0512.oss-cn-beijing.aliyuncs.com/blog/travel/IMG_0260-min.JPG)
+
 ![](https://hades0512.oss-cn-beijing.aliyuncs.com/blog/travel/IMG_0276-min.JPG)
 
 ## 第二天
@@ -25,11 +28,13 @@
 ## 玉龙雪山
 
 ![](https://hades0512.oss-cn-beijing.aliyuncs.com/blog/travel/IMG_0346-min.JPG)
+
 ![](https://hades0512.oss-cn-beijing.aliyuncs.com/blog/travel/IMG_0397-min.JPG)
 
 ## 蓝月谷
 
 ![](https://hades0512.oss-cn-beijing.aliyuncs.com/blog/travel/IMG_0432-min.JPG)
+
 ![](https://hades0512.oss-cn-beijing.aliyuncs.com/blog/travel/IMG_0400-min.JPG)
 
 ## 建议

@@ -62,8 +62,8 @@ function sidebarDailyNotes() {
       collapsed: true,
       items: [
         { text: '丽江', link: '/daily-notes/travel/2021/Lijiang' },
-        { text: '武陵山', link: '/daily-notes/travel/2020/JinfoMountain' },
-        { text: '天意谷', link: '/daily-notes/travel/2020/JinfoMountain' },
+        { text: '武陵山', link: '/daily-notes/travel/2021/Wuling' },
+        { text: '天意谷', link: '/daily-notes/travel/2021/ProvidenceValley' },
       ],
     },
     {
