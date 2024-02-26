@@ -70,8 +70,7 @@ function sidebarDailyNotes() {
       text: '2023年',
       collapsed: true,
       items: [
-        { text: '南天湖', link: '/daily-notes/travel/2023/WesternSichuan' },
-        { text: '仙女山', link: '/daily-notes/travel/2023/WesternSichuan' },
+        { text: '仙女山', link: '/daily-notes/travel/2023/FairyMountain' },
         { text: '川西之旅', link: '/daily-notes/travel/2023/WesternSichuan' },
       ],
     },
